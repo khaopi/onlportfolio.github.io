@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+    body {
+      font-family: 'Fira Code', monospace;
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background: #1f1f1f;
+      color: #00bcd4;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #00bcd4;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #4dd0e1;
+    }
+    .project {
+      margin-bottom: 20px;
+    }
+    .skills, .contact {
+      list-style: none;
+      padding: 0;
+    }
+    .skills li, .contact li {
+      background: #1f1f1f;
+      display: inline-block;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .project img {
+      max-width: 100%;
+      border: 1px solid #333;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .contact-form {
+      margin-top: 20px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      background: #1f1f1f;
+      color: #e0e0e0;
+    }
+    .contact-form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Portfolio</h1>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi! I'm Sam a computer engineering student who's still learning and growing in the field. I'm passionate about technology and always curious to understand how things work—from hardware to software. Whether it's coding, building systems, or solving tech problems, I'm excited to keep exploring and improving my skills one step at a time.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Personal Website</h3>
+    <p>A responsive personal website built with HTML, CSS, and JavaScript.</p>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+    <a href="https://github.com/khaopi" target="_blank">View on GitHub</a>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Git & GitHub</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Information</h2>
+  <ul class="contact">
+    <li>Email: buenzsam05@gmail.com</li>
+  </ul>
+
+  <form class="contact-form" onsubmit="submitForm(event)">
+    <h3>Send me a message</h3>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script>
+  function submitForm(event) {
+    event.preventDefault();
+    alert('Thank you! Your message has been submitted.');
+  }
+</script>
+
+</body>
+</html>
